@@ -22,12 +22,12 @@ int main(int argc, char **argv) {
   }
   if(rainfall != 99999 && rainfall>0) {
    i++;
-   totalRain = rainfall + totalRain
+   totalRain = rainfall + totalRain;
   }  
  } 
    averageRainFall = totalRain/i;
 printf("Average Rainfall: %f\n", averageRainFall);
-  return 0
+  return 0;
 }
     
     
