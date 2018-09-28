@@ -12,7 +12,7 @@ int main(int argc, char **argv) {
  
  double averageRainFall, totalRain, rainfall; 
  
- int i;
+ int i = 0;
  while(rainfall != 99999) {
    printf("Enter the rainfall of this day:\n");
    scanf("%lf", rainfall);
