@@ -10,6 +10,7 @@
 
 int main(int argc, char **argv) {
   double x, y, E;
+  double previousG, perviousA, currentA, currentG;
   
   x = atof(argv[1]);
   y = atof(argv[2]);
@@ -19,5 +20,10 @@ int main(int argc, char **argv) {
   G = sqrt(x*y);
   n = fabs(A-G);
   
-  for(i=1;i<n;i++) {
+  while(fabs(A-G)>=E) {
+   currentA = .5(previousA + previousG);
+   currentG = sqrt(previousA * previousG);
+  }
+ 
+   
   
