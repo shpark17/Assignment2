@@ -10,8 +10,10 @@
 
 int main(int argc, char **argv) {
   double x, y, E;
-  double previousG, perviousA, currentA, currentG;
-  
+  double A, G;
+  double currentA = 1;
+  double currentG = 1;
+ 
   x = atof(argv[1]);
   y = atof(argv[2]);
   E = atof(argv[3]);
@@ -20,10 +22,10 @@ int main(int argc, char **argv) {
   G = sqrt(x*y);
   n = fabs(A-G);
   
-  while(fabs(A-G)>=E) {
-   currentA = .5(previousA + previousG);
-   currentG = sqrt(previousA * previousG);
-  }
- 
-   
-  
+  do { 
+    i++; 
+   currentA = .5(A + G);
+   currentG = sqrt(A * G);
+  } while (fabs(currentA - currentG) >= E);
+   if(fabs(currentA - currentG) <= E) {
+    printf("M(%f,%f) = %f"\n, x, y, currentA)
