@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv) {
  
- double elementName, elementSymbol, halflife, initialMass;
+ double halflife, initialMass;
  int atomicNumber;
  double remains;
  
@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
  int i = 1;
  for(i=1;i<=halflife;i++) {
   remains = initialMass * pow(.5, (i/halflife));
-  printf("%d, %f\n", i, remains);
+  printf("%d\t %fg\n", i, remains);
  }
  return 0;
 }
