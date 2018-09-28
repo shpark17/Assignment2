@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
    printf("Enter the rainfall of this day:\n");
    scanf("%lf", rainfall);
   
-  if(rainfall = 99999) {
+  if(rainfall == 99999) {
    break;
   }
   if(rainfall != 99999 && rainfall>0) {
