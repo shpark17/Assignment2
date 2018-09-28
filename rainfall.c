@@ -18,15 +18,17 @@ int main(int argc, char **argv) {
    scanf("%lf", rainfall);
   
   if(rainfall = 99999) {
-   exit;
+   break;
   }
   if(rainfall != 99999 && rainfall>0) {
    i++;
-  }  
-  if(rainfall != 99999 && rainfall<0){
-   void;
-  }
    totalRain = rainfall + totalRain
+  }  
+ } 
+   averageRainFall = totalRain/i;
+printf("Average Rainfall: %f\n", averageRainFall);
+  return 0
+}
     
     
  /**
