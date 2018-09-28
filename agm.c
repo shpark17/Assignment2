@@ -16,12 +16,12 @@ int main(int argc, char **argv) {
   y = atof(argv[2]);
   E = atof(argv[3]);
   
-  A = (1/2)*(x+y);
+  A = (.5)*(x+y);
   G = sqrt(x*y);
  
- while (fabs(A - G) >= E) {
+ while (fabs(A - G) > E) {
    double currentA = A;
-   A = (1/2) * (A + G);
+   A = (.5) * (A + G);
    printf("%f", A);
    G = sqrt(currentA * G);
  }
