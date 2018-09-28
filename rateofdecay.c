@@ -11,10 +11,9 @@
 int main(int argc, char **argv) {
  
  double remains, years;
+ double elementName, elementSymbol;
  
  atomicNumber = atoi(argv[1]);
- elementName = 
- elementSymbol = 
  halflife = atof(argv[4]);
  initialMass = atof(argv[5]);
  printf("%s", argv[2]);
