@@ -10,7 +10,8 @@
 
 int main(int argc, char **argv) {
  
- double atomicNumber, elementName, elementSymbol, halflife, initialMass;
+ double elementName, elementSymbol, halflife, initialMass;
+ int atomicNumber;
  double remains;
  
  if(argc != 6) {
@@ -20,14 +21,15 @@ int main(int argc, char **argv) {
  atomicNumber = atoi(argv[1]);
  halflife = atof(argv[4]);
  initialMass = atof(argv[5]);
- printf("%s", argv[2]);
- printf("%s", argv[3]);
  
  printf("%s (%d-%s)\n", argv[2], atomicNumber, argv[3]);
- int i = 0;
- for(i=0;i<=halflife;i++) {
+ printf("Year Amount");
+ printf("---------------\n --\t %f", initialMass);
+
+ int i = 1;
+ for(i=1;i<=halflife;i++) {
   remains = initialMass * pow(.5, (i/halflife));
-  printf("Year Amount\n %f, %f\n", i, remains);
+  printf("%f, %f\n", i, remains);
  }
  return 0;
 }
