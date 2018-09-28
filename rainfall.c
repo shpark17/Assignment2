@@ -14,7 +14,7 @@ int main(int argc, char **argv) {
  
  int i = 0;
  while(rainfall != 99999) {
-  i++;
+  
    printf("Enter the rainfall of this day:\n");
    scanf("%lf", rainfall);
   
@@ -23,7 +23,7 @@ int main(int argc, char **argv) {
   }
   if(rainfall != 99999 && rainfall>0) {
    totalRain = rainfall + totalRain;
-   
+   i++;
   }  
  } 
    averageRainFall = totalRain/i;
