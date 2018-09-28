@@ -23,7 +23,7 @@ int main(int argc, char **argv) {
  initialMass = atof(argv[5]);
  
  printf("%s (%d-%s)\n", argv[2], atomicNumber, argv[3]);
- printf("Year Amount");
+ printf("Year Amount\n");
  printf("---------------\n --\t %f\n", initialMass);
 
  int i = 1;
