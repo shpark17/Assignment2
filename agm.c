@@ -22,6 +22,7 @@ int main(int argc, char **argv) {
   do {
    double currentA = A;
    A = (1/2) * (A + G);
+   printf("%f", A);
    G = sqrt(currentA * G);
   } while (fabs(A - G) >= E);
     printf("M(%f,%f): %f\n", x, y, A);
