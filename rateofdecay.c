@@ -24,5 +24,5 @@ int main(int argc, char **argv) {
   remains = initialMass * pow(.5, (i/halflife));
  }
  printf("%s (%d-%s)\n Year Amount\n %f, %f\n", argv[2], atomicNumber, argv[3], years, remains);
- return 0
+ return 0;
 }
