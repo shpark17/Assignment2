@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
   G = sqrt(x*y);
  
   do {
-   double currentA = A;
+   double A = currentA;
    A = (1/2) * (A + G);
    G = sqrt(currentA * G);
   } while (fabs(A - G) >= E);
