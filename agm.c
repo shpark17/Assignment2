@@ -22,7 +22,6 @@ int main(int argc, char **argv) {
  while (fabs(A - G) > E) {
    double currentA = A;
    A = (.5) * (A + G);
-   printf("%f", A);
    G = sqrt(currentA * G);
  }
  printf("M(%f,%f): %f\n", x, y, A);
