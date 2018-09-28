@@ -21,8 +21,8 @@ int main(int argc, char **argv) {
    break;
   }
   if(rainfall != 99999 && rainfall>0) {
-   i++;
    totalRain = rainfall + totalRain;
+   i++;
   }  
  } 
    averageRainFall = totalRain/i;
