@@ -12,20 +12,36 @@ int main(int argc, char **argv) {
  
  double averageRainFall, rainfall; 
  
- totalRain = rainfall + totalRain
-  
- printf("Enter the rainfall of this day:\n");
- scanf("%lf", rainfall);
-       
- if(rainfall >= 99999) {
-  end 
- }
- if(user inputs negative value) {
-  ignore...
-   
- int i = 0
+ int i;
  while(rainfall != 99999) {
-  totalRain = rainfall + totalRain
+   printf("Enter the rainfall of this day:\n");
+   scanf("%lf", rainfall);
+  
+  if(rainfall = 99999) {
+   exit;
+  }
+  if(rainfall != 99999 && rainfall>0) {
+   i++;
+  }  
+  if(rainfall != 99999 && rainfall<0){
+   
+  }
+   totalRain = rainfall + totalRain
+    
+    
+ /**
+ user input 
+ check if 99999 what happen - end 
+ if not what happen - keep going 
+ 
+ loop(){
+  user input 
+  check if 99999  -what happen =- end 
+  if not - keep going - iterate count - 
+ 
+ }
+  compute average. 
+  */
   
    
    
