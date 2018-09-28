@@ -10,9 +10,9 @@
 
 int main(int argc, char **argv) {
  
+ double atomicNumber, elementName, elementSymbol, halflife, initialMass;
  double remains, years;
- double elementName, elementSymbol;
- 
+  
  atomicNumber = atoi(argv[1]);
  halflife = atof(argv[4]);
  initialMass = atof(argv[5]);
