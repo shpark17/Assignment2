@@ -24,7 +24,7 @@ int main(int argc, char **argv) {
  
  printf("%s (%d-%s)\n", argv[2], atomicNumber, argv[3]);
  printf("Year Amount\n");
- printf("---------------\n --\t %f\n", initialMass);
+ printf("---------------\n --\t %fg\n", initialMass);
 
  int i = 1;
  for(i=1;i<=halflife;i++) {
