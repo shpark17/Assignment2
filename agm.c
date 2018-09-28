@@ -11,8 +11,8 @@
 int main(int argc, char **argv) {
   double x, y, E;
   double A, G;
-  double currentA = 1;
-  double currentG = 1;
+  double currentA;
+  double currentG;
  
   x = atof(argv[1]);
   y = atof(argv[2]);
@@ -24,7 +24,7 @@ int main(int argc, char **argv) {
   int i = 0;
   do { 
     i++; 
-   currentA = .5(A + G);
+   currentA = (1/2) * (A + G);
    currentG = sqrt(A * G);
   } while (fabs(currentA - currentG) >= E);
    if(fabs(currentA - currentG) <= E) {
