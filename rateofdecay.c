@@ -23,6 +23,7 @@ int main(int argc, char **argv) {
  for(i=0;i<=halflife;i++) {
   remains = initialMass * pow(.5, (i/halflife));
  }
- printf("%s (%d-%s)\n Year Amount\n %f, %f\n", argv[2], atomicNumber, argv[3], years, remains);
+ printf("%s (%d-%s)\n", argv[2], atomicNumber, argv[3]);
+ printf("Year Amount\n %f, %f\n", years, remains);
  return 0;
 }
