@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
   
   A = (1/2)*(x+y);
   G = sqrt(x*y);
-  n = fabs(A-G);
+  
   
   do { 
     i++; 
@@ -28,4 +28,7 @@ int main(int argc, char **argv) {
    currentG = sqrt(A * G);
   } while (fabs(currentA - currentG) >= E);
    if(fabs(currentA - currentG) <= E) {
-    printf("M(%f,%f) = %f"\n, x, y, currentA)
+    printf("M(%f,%f) = %f"\n, x, y, currentA);
+  }
+return 0;
+}
