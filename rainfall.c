@@ -23,8 +23,9 @@ int main(int argc, char **argv) {
  if(user inputs negative value) {
   ignore...
    
- 
+ int i = 0
  while(rainfall != 99999) {
   totalRain = rainfall + totalRain
+  
    
    
