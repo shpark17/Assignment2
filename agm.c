@@ -28,7 +28,7 @@ int main(int argc, char **argv) {
    currentG = sqrt(A * G);
   } while (fabs(currentA - currentG) >= E);
    if(fabs(currentA - currentG) <= E) {
-    printf("M(%f,%f): %f\n" x, y, currentA);
+    printf("M[%f,%f]: %f\n" x, y, currentA);
   }
 return 0;
 }
