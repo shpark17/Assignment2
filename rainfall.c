@@ -21,7 +21,7 @@ int main(int argc, char **argv) {
   if(rainfall == 99999) {
    break;
   }
-  if(rainfall != 99999 && rainfall>0) {
+  if(rainfall != 99999 && rainfall>=0) {
    totalRain = rainfall + totalRain;
    i++;
   }  
