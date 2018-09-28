@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
  int i = 1;
  for(i=1;i<=halflife;i++) {
   remains = initialMass * pow(.5, (i/halflife));
-  printf("%f, %f\n", i, remains);
+  printf("%d, %f\n", i, remains);
  }
  return 0;
 }
