@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv) {
  
- double averageRainFall, rainfall; 
+ double averageRainFall, totalRain, rainfall; 
  
  int i;
  while(rainfall != 99999) {
@@ -24,7 +24,7 @@ int main(int argc, char **argv) {
    i++;
   }  
   if(rainfall != 99999 && rainfall<0){
-   
+   void;
   }
    totalRain = rainfall + totalRain
     
