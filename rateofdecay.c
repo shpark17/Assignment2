@@ -18,10 +18,10 @@ int main(int argc, char **argv) {
  halflife = atof(argv[4]);
  initialMass = atof(argv[5]);
  printf("%s", argv[2]);
- printf("%s", argv[3])
+ printf("%s", argv[3]);
  
  int i = 0;
  for(i=0;i<=halflife;i++) {
   remains = initialmass * pow(.5, (i/halflife));
  }
- printf("
+ printf("%s (%d-%s)\n Year Amount\n %f, %f\n", argv[2], atomicNumber, argv[3], years, remains)
