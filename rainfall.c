@@ -16,8 +16,7 @@ int main(int argc, char **argv) {
  while(rainfall != 99999) {
   
    printf("Enter the rainfall of this day:\n");
-   scanf("%lf", rainfall);
-  printf("%f", rainfall);
+   scanf("%lf", &rainfall);
   
   if(rainfall == 99999) {
    break;
